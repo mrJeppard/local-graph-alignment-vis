@@ -1,8 +1,27 @@
 This is a prototype exploring an interactive viewer for local graph alignment.
 
-To check it out you'll need command line git and npm installed, then simply download the repo, move into the repo directory and
+Here's some screen shots if you're curious how it looks and don't want to play with it.
+
+A perfect alignment:
+
+![Alt text](public/perfect-linear.png?raw=True "Perfect")
+
+A 3-3 perfect alignment:
+
+![Alt text](public/perfect-3-3-linear.png?raw=True "3-3")
+
+A random alignment:
+
+![Alt text](public/bad-linear.png?raw=True "Random")
+
+
+If you want to play with the prototype you'll need command line git and npm installed, then simply clone the repo, move into the repo directory and
 
 `npm install && npm start`
+
+You'll probably notice some bugs in the alignment placing (pink circles), it's a prototype, I moved on.
+
+Here are some notes on what I learned from the project:
 
 The conclusion coming from the feedback was that exploring many to many mappings in the way is overly cluttered, and
 that likely a one graph representation would be preferred, with this type of view acting as a optional supplement
@@ -42,5 +61,5 @@ along with it. Feedback was that its unclear when there would be a use case for 
 you what nodes were attached, but you could just as well do that with coloration, so in hindsight this feature is
 probably not needed.
 
-Something that wasn't done is tying the pan-zoom function of each of the maps so that an similar movement would happen
+Something that wasn't done is tying the pan-zoom function of each of the graphs so that an similar movement would happen
 on either side. That might be interesting, especially if a ZUI was heavily leveraged.
